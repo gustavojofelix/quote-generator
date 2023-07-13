@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#" class="email">gustavojofelix@gmail.com</a>
+        <button class="view-react">
+            <i class="fa fa-refresh"></i>React version of the project
+         </button>
+    </nav>
+    <div class="quote-container" id="quote-container">
+        
+
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote">
+           
+            </span>
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="share-button twitter-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="share-button whatsapp-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+            <button class="share-button facebook-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-facebook"></i>
+            </button>
+            <button class="share-button instagram-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-instagram"></i>
+            </button>
+            <button class="share-button linkedin-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-linkedin"></i>
+            </button>
+        </div>
+        <button class="new-quote" id="new-quote">
+           <i class="fa fa-refresh"></i> Get Random Quote
+        </button>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
