@@ -4,6 +4,7 @@ const authorText = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
+const whatsappBtn = document.getElementById("whatsapp");
 
 let apiQuotes = [];
 
@@ -62,9 +63,16 @@ function tweetQuote() {
   window.open(twitterUrl, "_blank");
 }
 
+// Whatsapp Quote
+function whatsappQuote() {
+  const twitterUrl = `whatsapp://send?text=${quoteText.textContent} - ${authorText.textContent}`;
+  window.open(twitterUrl, "_blank");
+}
+
 // Event Listener
 newQuoteBtn.addEventListener("click", newQuote);
 twitterBtn.addEventListener("click", tweetQuote);
+whatsappBtn.addEventListener("click", whatsappQuote);
 
 // On Load
 getQuotes();
